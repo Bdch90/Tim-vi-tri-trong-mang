@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tìm giá trị trong mảng</title>
+</head>
+<body>
+	<h1>Nhập vào giá trị là 1 số:</h1><br>
+	<input id='text' type ='text' value="">
+	<button id='display' onclick = 'Search()'>Search</button><br>
+<script type="text/javascript">
+	
+	var mang=[-3,5,1,3,2,10];
+	function Search() {
+		var y=document.getElementById('text').value;
+		for(var x=0;x<mang.length;x++) {
+			if(y==mang[x]) {
+				document.write(y +' nằm tại :'+x+' trong mảng');
+			}
+		}
+	}
+
+</script>
+</body>
+</html>
